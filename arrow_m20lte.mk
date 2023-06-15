@@ -10,15 +10,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit device configuration
 $(call inherit-product, device/samsung/m20lte/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common Arrow Os stuff.
+$(call inherit-product, vendor/arrow/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_MINI_GAPPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := m20lte
-PRODUCT_NAME := evolution_m20lte
+PRODUCT_NAME := arrow_m20lte
 PRODUCT_MODEL := SM-M205F
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
